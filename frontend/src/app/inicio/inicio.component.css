@@ -1,10 +1,29 @@
-.logo-top{
-    width: 200px;
-    height: auto;
-}
 
 
 .headphones{
-    width: 300px;
-    height: auto;
+    width: 180px;
 }
+.start{
+    text-align: center;
+}
+
+.start a{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: bounce 1s ease-out;
+}
+.start a:hover {
+    background-color: #ff0404;
+    color: white;
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+

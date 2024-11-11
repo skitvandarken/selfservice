@@ -1,0 +1,239 @@
+
+
+.tema h1{
+    margin-top: -4%;
+}
+.wave{
+ 
+    align-items: center;
+    text-align: center;
+    position: center;
+    background-color: white;
+}
+
+.wave-image{
+    mix-blend-mode: multiply;
+    filter: invert(1);
+    width: auto;
+    height: 80px;
+}
+
+.card {
+    border: 2px solid;
+    position: relative;
+    overflow: hidden; /* Ensures the shine effect is confined to the border */
+    border-radius: 20px; /* Adjust this value to change the roundness of the corners */
+    background-image: url('/images/code.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(143, 0, 0);
+    background-blend-mode: darken;
+    
+}
+
+.card2 {
+    border: 2px solid;
+    position: relative;
+    overflow: hidden; /* Ensures the shine effect is confined to the border */
+    border-radius: 20px; /* Adjust this value to change the roundness of the corners */
+    background-image: url('/images/image.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(143, 0, 0);
+    background-blend-mode: darken;
+    
+}
+
+.card3 {
+    border: 2px solid;
+    position: relative;
+    overflow: hidden; /* Ensures the shine effect is confined to the border */
+    border-radius: 20px; /* Adjust this value to change the roundness of the corners */
+    background-image: url('/images/infra.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(143, 0, 0);
+    background-blend-mode: darken;
+    
+}
+
+.card4 {
+    border: 2px solid;
+    position: relative;
+    overflow: hidden; /* Ensures the shine effect is confined to the border */
+    border-radius: 20px; /* Adjust this value to change the roundness of the corners */
+    background-image: url('/images/1030_ChatGPT_feat.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(143, 0, 0);
+    background-blend-mode: darken;
+    
+}
+
+
+
+
+.service-icon{
+    width: 100px;
+    height: auto;
+}
+
+.click{
+
+        font-weight: 400 !important;
+        color: #000 !important;
+        
+    
+}
+
+.click:hover {
+
+    font-weight: 500 !important;
+    color: #444444 !important;
+    transition: 0.5;
+
+}
+
+.texto-1{
+    color: white !important;
+}
+/* Add this to your component's CSS file */
+
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+    transform: translateX(100%);
+    border-color: rgb(231, 71, 71);
+
+}
+
+
+
+
+.headphones{
+    width: 180px;
+}
+.start{
+    text-align: center;
+}
+
+  /* Animação de fade-in para a página */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+ 
+
+  /* Animação de slide-in para o título */
+  @keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Estilo do contador */
+  #contador {
+    font-size: 1em;
+    margin-bottom: 30px;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(26, 26, 26, 0.904);
+    border-radius: 10px;
+    margin-top: 10px;
+    position: absolute;
+    top:4%;
+    right: 10%;
+    animation: pulse 1.5s infinite alternate;
+  }
+
+  /* Animação de pulsação para o contador */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+
+  
+ 
+/*estilo caixa1 da modal*/
+.caixa {
+    border: 2px solid;
+    border-image: linear-gradient(to right, red, darkred) 1;
+    position: relative;
+    text-align: center;
+    overflow: hidden; /* Ensures the shine effect is confined to the border */
+}
+
+.caixa::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: inherit;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.caixa:hover::before {
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+.caixa:hover {
+    border-image: linear-gradient(to right, red, rgb(255, 93, 93)) 1; /* Ensures the gradient remains on hover */
+}
+ 
+.caixa_fundo{
+  background-color: red;
+
+
+
+}
+
+#promoVideo{
+  width: 500px;
+  margin: auto;
+  margin-top: 15%;
+}
+.fundoModal{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
